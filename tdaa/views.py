@@ -2,6 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home (request):
-    return HttpResponse ('olá td')
+    return render (request, 'tdaa/home.html')
 def sobre (request):
-    return HttpResponse ('olá td sobre')
+    return render (request, 'sobre.html')
+def contato (request):
+    return render (request, 'contato.html')
+def blog (request):
+    return render (request, 'blog.html')
+
